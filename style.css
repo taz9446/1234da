@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/*Aqui empieza el estilo del cuerpo*/
+/**{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+	display: grid;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}*/
+
+
+body{
+	min-height: 100vh;
+	background-image: url(fondo.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
+}
+body:before{
+	content: "";
+	width: 100%;
+	min-height: 300vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	background-image: linear-gradient(90deg,#52c4df,#ad55c1);
+	background-attachment: fixed;
+	background-size: 100vw 100vh; 
+	opacity: 0.5;
+	z-index: -1;
+}
+
+
+
+/*Aqui termina el estilo del cuerpo*/
+/*Aqui empieza el estilo de los botones de redes sociales*/
+.wrapper .button{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	float: right;
+	margin: 0 5px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	transition: all 0.3s ease-out;
+
+
+
+}
+
+.wrapper #redes:hover{
+	width: 200px;
+
+
+}
+
+.wrapper #redes .icon{
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	border-radius: 50px;
+	box-sizing: border-box;
+	line-height: 60px;
+	transition: all 0.3s ease-out;
+
+}
+
+.wrapper #redes:nth-child(1):hover .icon{
+	background: #4267B2;
+}
+.wrapper #redes:nth-child(2):hover .icon{
+	background: #1DA1F2;
+}
+.wrapper #redes:nth-child(3):hover .icon{
+	background: #E1306C;
+}
+.wrapper #redes:nth-child(4):hover .icon{
+	background: #333;
+}
+.wrapper #redes:nth-child(5):hover .icon{
+	background: #ff0000;
+}
+
+.wrapper #redes:hover .icon i{
+	color: #fff;
+}
+
+.wrapper #redes .icon i{
+	font-size: 25px;
+	line-height: 60px;
+	transition: all 0.3s ease-out;	
+}
+
+.wrapper #redes span{
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 60px;
+	margin-left: 10px;
+	transition: all 0.3s ease-out;	
+}
+
+.wrapper #redes:nth-child(1) span{
+	color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+	color: #1DA1F2;
+}
+.wrapper #redes:nth-child(3) span{
+	color: #E1306C;
+}
+.wrapper #redes:nth-child(4) span{
+	color: #333;
+}
+.wrapper #redes:nth-child(5) span{
+	color: #ff0000;
+}
+
+/*Aqui termina el estilo de los botones de redes sociales*/
+
+
+/*Aqui empieza el estilo del barra de menu*/
+
+.collapsing{
+	transition: all 0.3s ease-out;
+}
+.navbar{
+	background-color: #fff !important;
+	padding: 20px 0px;
+
+
+}
+
+.navbar-nav li:hover>ul.dropdown-menu{
+	display: block;
+}
+
+.dropdown-submenu{
+	position: relative;
+
+}
+
+.dropdown-submenu>.dropdown-menu{
+	top:0;
+	margin-top: -5px;
+	left: 100%;
+
+}
+.dropdown-menu>li>a:hover::after{
+	text-decoration: underline;
+	transform: rotate(-90deg);
+
+}
+
+/*Aqui termina el estilo de la barra menu*/
+
+/*Aqui empieza el estilo del formulario*/
+
+.formulario{
+	width: 450px;
+	margin: auto;
+	background: rgba(0,0,0,0.4);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 7px;
+
+}
+
+h2{
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+#nombre, #correo, #telefono, textarea{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 17px;
+	border: none;
+
+}
+
+textarea{
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+
+}
+
+#boton{
+	background: #31384A;
+	color: #fff;
+	padding: 20px 175px;
+
+}
+#boton:holver {
+	cursor: pointer;
+}
+
+
+
+
+.seccion{
+	background: rgba(0,0,0,0.4);
+	border-radius: 5px;
+}
+/*Aqui termina el estilo del formulario*/
